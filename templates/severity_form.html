@@ -1,0 +1,119 @@
+{% extends 'layout.html' %}
+
+
+{% block body %}
+<style>
+body {
+background-color: #F2DFCE
+}
+</style>
+
+    <h3>Severity Prediction</h3>
+ 
+<div>
+  <form enctype="multipart/form-data" action="/result" method="POST">
+   
+    <label for="age">Age</label>
+    <input type="number" id="age" name="Age">
+    <br>
+    
+    <label for="sext">Sex</label>
+    <select id="sex" name="Sex">
+      <option value="0">Male</option>
+      <option value="1">Female</option>
+    </select>
+    <br>
+
+    <label for="SARS-CoV-2 nucleic acids:">SARS-CoV-2 nucleic acids:</label>
+    <select id="SARS-CoV-2 nucleic acids:" name="SARS-CoV-2 nucleic acids:">
+      <option value ="0">Positive</option>
+      <option value ="1">Negative</option>
+      <option value ="2">Results Pending</option>
+    </select>
+    <br>
+
+    <label for="Computed tomography (CT):">Computed tomography (CT):</label>
+    <select id="Computed tomography (CT):" name="Computed tomography (CT):">
+      <option value="0">Positive</option>
+      <option value="1">Negative</option>
+    </select>
+    <br>
+    
+    <label for="MCH">MCH</label>
+    <input type="number"  step="any" id="MCH" name="MCH">
+    <br>
+
+    <label for="HCT">HCT</label>
+    <input type="number"  step="any" id="HCT" name="HCT">
+    <br>
+
+    <label for="RBC">RBC</label>
+    <input type="number"   step="any"id="RBC" name="RBC">
+    <br>
+
+    <label for="PLT">PLT</label>
+    <input type="number" step="any" id="PLT" name="PLT">
+    <br>
+
+    <label for="MO">MO</label>
+    <input type="number"  step="any" id="MO" name="MO">
+    <br>
+
+    <label for="NE">NE</label>
+    <input type="number" step="any" id="NE" name="NE">
+    <br>
+
+    <label for="EOP">EOP</label>
+    <input type="number" step="any" id="EOP" name="EOP ">
+    <br>
+
+    <label for="LYP">LYP</label>
+    <input type="number"  step="any" id="LYP" name="LYP">
+    <br>
+
+    <label for="WBC">WBC</label>
+    <input type="number" step="any" id="WBC" name="WBC">
+    <br>
+
+    <label for="MCHC">MCHC</label>
+    <input type="number" step="any" id="MCHC" name="MCHC">
+    <br>
+
+    <label for="MCV">MCV</label>
+    <input type="number" step="any" id="MCV" name="MCV">
+    <br>
+
+    <label for="HGB">HGB</label>
+    <input type="number"  step="any" id="HGB" name="HGB">
+    <br>
+
+    <label for="MPV">MPV</label>
+    <input type="number" step="any" id="MPV" name="MPV">
+    <br>
+
+    <label for="EO">EO</label>
+    <input type="number"  step="any" id="EO" name="EO">
+    <br>
+
+    <label for="LY">LY</label>
+    <input type="number"  step="any" id="LY" name="LY">
+    <br>
+
+    <label for="BAP">BAP</label>
+    <input type="number"  step="any" id="BAP" name="BAP">
+    <br>
+
+    <label for="MOP">MOP</label>
+    <input type="number"  step="any" id="MOP" name="MOP">
+    <br>
+
+    <label for="NEP">NEP</label>
+    <input type="number"  step="any" id="NEP" name="NEP">
+    <br>
+   
+
+    <input type="submit" value="Upload">
+  </form>
+</div>
+
+{% endblock %}
